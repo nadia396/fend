@@ -99,7 +99,8 @@ I won't provide further examples here, as it's up to you to create the various r
 Once you are hooked up to the Aylien API, you are most of the way there! Along with making sure you are following all the requirements in the project rubric in the classroom, here are a few other steps to make sure you take.
 
 - Parse the response body to dynamically fill content on the page.
-- Test that the server and form submission work, making sure to also handle error responses if the user input does not match API requirements. 
+- Test that the server and form submission work, making sure to also handle error responses if th
+e user input does not match API requirements. 
 - Go back to the web pack config and add the setup for service workers.  
 - Test that the site is now available even when you stop your local server 
 
