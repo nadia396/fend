@@ -20,17 +20,20 @@ export {
 
 document.getElementById('sentiment-form').addEventListener('submit', function(event) {
     // debugger;
+    console.log("TEST");
      event.preventDefault(); // Prevent the default form submission
  
      const text = document.getElementById('text-input').value; // Get the text input value
- 
+    
      // Make a POST request to your server
-    fetch('/analyze', {
+    fetch('http://localhost:8081/analyze', {
        method: 'POST',
        headers: {
-         'Content-Type': 'application/json'
+         'Content-Type': 'application/json',
+         'Accept': 'application/json'
        },
        body: JSON.stringify({ text })
+      //  body: JSON.stringify({ text })
      })
      .then(response => response.json())
      .then(data => {
